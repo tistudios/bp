@@ -1,0 +1,29 @@
+@import "./header/theme_selector";
+
+.app-header {
+  border-bottom: 1px solid $light-gray;
+  a {
+    display: inline-block;
+    padding: 1rem 0;
+  }
+}
+
+.app-nav-logo {
+  color: $text-color;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+.app-nav-auth {
+  float: right;
+
+  @include thredded-media-mobile {
+    font-size: 0;
+
+    a {
+      margin-left: 0.4rem;
+      font-size: 1rem;
+    }
+  }
+}
